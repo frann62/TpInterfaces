@@ -8,9 +8,12 @@
     <link rel="stylesheet" href="styles/fonts.css">
     <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Roboto:wght@100;400&display=swap">
 </head>
-<body>        
-    <h1 class="title-reg">Complete el siguiente formulario para registrarse.</h1>
-    <div class="div-reg">
+<body> 
+    <section>
+        <h1 class="title-reg">Complete el siguiente formulario para registrarse.</h1>
+    </section>       
+    <section>
+         <div class="div-reg">
         <form class="form-reg">
             <h2>Nombre y Apellido(*):</h2>
             <input type="text" class="input-reg" >
@@ -32,17 +35,28 @@
                 <a href="login.html" class="btn-reg">Registrarse</a>
               </div>  
               <div id="registro-exitoso">
-                <span>¡Registro exitoso! Serás redirigido al inicio de sesión en unos segundos...</span>
+                <span>¡Registro exitoso! Serás redirigido al home en unos segundos...</span>
               </div>
-              
+              <div class="separador">
+                <hr>
+                 <p>O</p> 
+                </div>
+                   <div class="login-redes">
+                    <h2>Registrarse Con:</h2>
+                    <a href="home.html" class="btn-loginredes"><img class="icon-login" src="img/fb.png" alt="">Facebook</a>
+                    <a href="home.html" class="btn-loginredes"><img class="icon-login google" src="img/google.png" alt="">Google</a>
+                </div>            
         </form> 
     </div>
-    <div>
-        <form class="reg-iniciarsesion">
+    </section>
+   <section>
+     <form class="reg-iniciarsesion">
             <p>Tienes una cuenta?</p>
-            <input type="submit" class="btn-iniciarsesion" value="Iniciar Sesion">
+            <a href="login.html" class="btn-iniciarsesion">Iniciar Sesion</a>
         </form>
     </div>
+   </section>
+    <div>
     <script src="js/regexitoso.js"></script>
 </body>
 </html>

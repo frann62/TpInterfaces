@@ -9,7 +9,7 @@ document.addEventListener('DOMContentLoaded', function() {
   
       setTimeout(function() {
         registroExito.style.display = 'none';
-        window.location.href = "login.html";
+        window.location.href = "home.html";
       }, 4000);
     });
   });
