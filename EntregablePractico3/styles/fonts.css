@@ -1,0 +1,63 @@
+*{
+    font-family: 'Roboto', sans-serif;
+}
+
+.jugar, .comprar{
+    text-align: center;
+    font-weight: bold;
+    font-size: 15px;
+}
+
+
+#menu li{
+    font-size: 30px;
+}
+
+.title-juego{
+    font-size: 0.9em;
+    margin-top: 10px;
+}
+
+.footer-info p {
+    font-size: 18px;
+}
+
+.game-historia p{
+    font-size: 20px;
+}
+
+.login-redes h2{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-left: -1px;
+}
+
+.login-reg p{
+    font-weight: bold;
+    padding-top: 10px;       
+}
+
+.reg-iniciarsesion p{
+    font-weight: bold;
+    padding-top: 10px;     
+}
+    
+.separador p {
+   color: #0C0D14;
+   position: relative;
+   margin: 0 auto;
+   border: none;
+   width: 50px;
+   font-size: 14px;
+   background-color: white;
+   font-weight: bold;
+   top: 5px;
+}
+
+.form-login h1{
+    font-weight: bold;
+    color: #0C0D14;
+    font-size: 28px;
+    padding-top: 20px;
+}
