@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Registrarse en WJuegos</title>
+    <link rel="stylesheet" href="styles/style.css">
+    <link rel="stylesheet" href="styles/fonts.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Roboto:wght@100;400&display=swap">
+</head>
+<body> 
+    <section>
+        <h1 class="title-reg">Complete el siguiente formulario para registrarse.</h1>
+    </section>       
+    <section>
+         <div class="div-reg">
+        <form class="form-reg">
+            <h2>Nombre y Apellido(*):</h2>
+            <input type="text" class="input-reg" >
+            <h2>Nickname:</h2>
+            <input type="text"class="input-reg" >
+            <h2>Edad(*):</h2>
+            <input type="number"class="edad" >
+            <h2>Correo Electronico(*):</h2>
+            <input type="email"class="input-reg" >
+            <h2>Contraseña(*):</h2>
+            <input type="password"class="input-reg" >
+            <h2>Verificar Contraseña(*):</h2>
+            <input type="password"class="input-reg" >
+            <p>(*) Campos obligatorios</p>
+            <div class="div-captchas">
+                <img class="captcha" src="img/Recaptcha.jpg" alt="">
+            </div>
+            <div id="registro">
+                <a href="login.html" class="btn-reg">Registrarse</a>
+              </div>  
+              <div id="registro-exitoso">
+                <span>¡Registro exitoso! Serás redirigido al home en unos segundos...</span>
+              </div>
+              <div class="separador">
+                <hr>
+                 <p>O</p> 
+                </div>
+                   <div class="login-redes">
+                    <h2>Registrarse Con:</h2>
+                    <a href="home.html" class="btn-loginredes"><img class="icon-login" src="img/fb.png" alt="">Facebook</a>
+                    <a href="home.html" class="btn-loginredes"><img class="icon-login google" src="img/google.png" alt="">Google</a>
+                </div>            
+        </form> 
+    </div>
+    </section>
+   <section>
+     <form class="reg-iniciarsesion">
+            <p>Tienes una cuenta?</p>
+            <a href="login.html" class="btn-iniciarsesion">Iniciar Sesion</a>
+        </form>
+    </div>
+   </section>
+    <div>
+    <script src="js/regexitoso.js"></script>
+</body>
+</html>
