@@ -284,15 +284,9 @@ function youWin() {
         if(winner != null){
         player1.turno = false;
         player2.turno = false;
-        chooseMode.style='display:flex';
-        gamemode.style='display:flex';
-        reset.style='display:none';
         ctx.fillText(`Juego Finalizado ${winner} ha ganado`,350,80);
         }
     else{
-        chooseMode.style='display:flex';
-        gamemode.style='display:flex';
-        reset.style='display:none';
         ctx.fillStyle = "rgba(213, 18, 18, 0.8)";
         ctx.fillText('Se ha declarado empate',350,80);
     }
