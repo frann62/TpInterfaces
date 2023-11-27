@@ -1,0 +1,832 @@
+*{
+    font-family: 'Lato', sans-serif;
+    margin: 0;
+}
+
+body{
+    width: 1280px;
+    overflow-x: hidden;
+}
+
+.container-1080{
+    width: 1080px;
+}
+
+/*******************HEADER**********************/
+
+.navbar{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    top:0;
+    position: fixed;
+    left: 0;
+    width: 1280px;
+    height: 145px;
+    z-index: 99;
+    background: linear-gradient(180deg, #5499F8 0%, #5499F8 87.91%, rgba(84, 153, 248, 0.00) 100%);
+}
+
+.img-titlespidey{
+    z-index: 99;
+    position: fixed;
+    top: 70px;
+    left: 300px;
+    width: 44%;
+    transition: width 0.5s ease;
+}
+
+.navlogo{
+    height: 109px;
+}
+
+.img-titlespidey img{
+    width: 100%;
+}
+
+.logo{
+    width:11%;
+    top: 20px;
+    left: 500px;
+    transition: width 0.5s ease;
+}
+
+.imgflex{
+    width: 100%;
+}
+
+.lbl-menu{
+    bottom: 30px;
+    position: relative;
+    cursor: pointer;
+    filter: drop-shadow(4px 5px 0px #02187E);
+    left: 100px;
+}
+
+.lbl-logo{
+    bottom: 20px;
+}
+   
+.lbl-menu #span1, #span2, #span3{
+    position: absolute;
+    content: "";
+    background-color: #FFE901;
+    border: #2981FF 3.5px solid ;
+    width: 34px;
+    height: 4px;
+    border-radius: 5px;
+    transition: all 400ms ease;
+}
+   
+   #span2{
+       top: 11px;
+}
+   
+   #span3{
+      top: 22px ; 
+}
+
+   #botonburger{
+    display: none;
+}
+
+#botonburger:checked ~ .lbl-menu #span1{
+    transform: rotate(140deg);
+    top: 10px;
+}
+
+#botonburger:checked ~ .lbl-menu #span2{
+   opacity: 0;
+}
+
+#botonburger:checked ~ .lbl-menu #span3{
+    transform: rotate(-140deg);
+    top: 10px;
+}
+
+.btn-buy{
+    width: 200px;
+    height: 50px;
+    border-radius: 111px;
+    border: 8px solid var(--2982-ff, #2982FF);
+    background: #FFE901;
+    box-shadow: 4px 5px 0px 0px #02187E;
+    z-index: 1;
+    left: 980px;
+    position: absolute;
+    top: 20px;
+    transition: all .5s ease; 
+}
+
+.btn-buy:hover {
+    background: #FFD700; 
+    transform: scale(1.1); 
+}
+
+.btn-buy p{
+    color: #02187E;
+    font-size: 20px;
+    font-weight: 900;
+    line-height: 18.9px;
+    letter-spacing: 2.2px;
+    display: flex;
+    justify-content: center;
+    margin-top: 15px;
+    -webkit-text-stroke: #02187E 2px;
+}
+
+/********************* Seccion principal Parallax******************/
+
+.section-principal{
+    width: 100%;
+}
+
+.background-principal{
+    width: 1280px;
+    height: 720px;
+    top: 126px;
+    position: absolute;
+    left: 0;
+    object-fit: cover;
+    vertical-align: top;
+    z-index: 0;
+}
+
+.img-edifizq{
+    top: 126px;
+    position: absolute;
+    left: 906px;    
+    width: 374px;
+    height: 727.5px;
+    background-color: transparent;
+    z-index: 0;
+}
+
+.img-edifmed{
+    position: absolute;
+    top: 634px;
+    left:392px;
+    width: 543.5px;
+    height: 213.5px; 
+    background-color: transparent;
+    z-index: 0;
+}
+
+.img-edifder{
+    position: absolute;
+    top: 144px;
+    left: -47px;
+    width: 452px;
+    height: 720px;
+    background-color: transparent;
+    z-index: 1;
+}
+
+.spideypp {
+    width: 465px;
+    height: 465px;
+    position: absolute;
+    left: 404px;
+    top: 403px;
+    object-fit: cover;
+    vertical-align: top;
+    z-index: 5;
+    background-color: transparent;
+}
+
+.spideymm{
+    width: 393px;
+    height: 393px;
+    position: absolute;
+    left: 695px;
+    top: 335px;
+    object-fit: cover;
+    vertical-align: top;
+    background-color: transparent;
+    z-index: 1;
+}
+
+.spideygw{
+    width: 360px;
+    height: 444px;
+    position: absolute;
+    left: 90px;
+    top: 388px;
+    object-fit: cover;
+    vertical-align: top;
+    background-color: transparent;
+    z-index: 1;
+}  
+
+.telaraniapp{
+    width: 570px;
+    top: 380px;
+    left: 0;
+    position: absolute;  
+    z-index: 2;
+    background-color: transparent;
+}
+
+.telaraniamm{
+    width: 305px;
+    top: 382px;
+    left: 975px;
+    position: absolute;  
+    background-color: transparent;
+    z-index: 1;
+}
+
+/******************** Seccion Duende verde ************************/
+
+.container-dv{
+    align-self: stretch;
+    padding-right: 2px;
+    margin: 39px 0 0 10px;
+}
+
+.rect-dv{
+    width: 1280px;
+    height: 844.5px;
+    top: 772.5px;
+    position: absolute;
+    background-color: transparent;
+}
+
+.column-dv{
+    display: flex;
+    flex-direction: column;
+    line-height: normal;
+    width: 51%;
+    margin-left: 0px;
+    transition: all 2s ease;
+}
+
+.description {
+    display: flex;
+    flex-direction: column;
+    color: #FFF;
+    position: absolute;
+    top: 950px;
+    left: 95px;
+    background-color: transparent;
+}
+
+.content-dv{
+    font-size: 20px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 24px;
+    margin-top: 25px;
+    background-color: transparent;
+}
+
+.title-dv{
+    z-index: 1;
+    font-size: 60px;
+    font-weight: 600;
+    color: #FFF;
+    line-height: 94.5%;
+    background-color: transparent;
+}
+
+.duendeverde {
+    width: 553px;
+    position: absolute;
+    height: 921px;
+    left: 700px;
+    top: 870px;
+    object-fit: cover;
+    vertical-align: top;
+    z-index: 2;
+    background-image: url(../imghero/duendeverde.png);
+}
+
+.imgjuego-dv{
+    height: 413.131px;
+    top: 1255px;
+    left: 150px;
+    position: absolute;
+    z-index: 1;
+}
+
+/********************** Seccion Cards Fade-in **********************/
+
+.main-container {
+    display: flex;
+    align-self: center;
+    top: 1970px;
+    position: absolute;
+    left: 100px;
+    gap: 40.56px;
+    background-color: transparent;
+}
+
+.image-wrapper {
+    display: flex;
+    flex-direction: column;
+    background-color: transparent;
+    transition: all 0.5s ease-in;
+    opacity: 0;
+}
+
+/***************** Fade-in con delay de transicion ***************/
+
+.fade-in {
+    opacity: 1;
+    transform: translate(0px, -100px);
+}
+
+#cardpp {
+    transition-delay: 0s;
+}
+
+#cardmm {
+    transition-delay: 0.3s;
+}
+
+#cardgw {
+    transition-delay: 0.5s;
+}
+
+/******************************************************************/
+
+.img {
+    width: 332.96px;
+    background-color: transparent;
+}
+
+.description-game {
+    margin-top: 28px;
+    font: 400 20px;
+    line-height: normal;
+    justify-content: center;
+    display: flex;
+    justify-self: center;
+    background-color: transparent;
+}
+
+/********************* Seccion Juego spider ghost ******************/
+
+.fondojuegogw{
+    top: 2497px;
+    position: absolute;
+    background-color: transparent;
+}
+
+/******************** Perspectiva Hover ***********************/
+.imgjuegogw1:hover,
+.imgjuegogw2:hover,
+.imgjuegogw3:hover {
+  cursor: pointer;
+  transform: scale(1.1);
+  transform-origin: center center;
+  transition: all .7s ease-in-out;
+  z-index: 9;
+}
+
+.imgjuegogw1{
+    top: 2355px;
+    position: absolute;
+    left: 40px;
+    background-color: transparent;
+}
+
+.imgjuegogw2{
+    position: absolute;
+    top: 2480px;
+    left: 35px;
+    background-color: transparent;
+}
+
+.imgjuegogw3{
+    position: absolute;
+    top: 2668px;
+    left: 72px;
+    z-index: 1;
+    background-color: transparent;
+}
+
+.card {
+    transition: transform 1.5s ease;
+    cursor: pointer;
+    
+}
+
+.card:hover {
+    z-index: 9;
+}
+/***************************************************************/
+
+
+/*********************** Seccion Vengadores ************************/
+
+.rect-vengadores{
+    width: 1280px;
+    height: 900.5px;
+    top: 2971px;
+    position: absolute;
+    background-color: transparent;
+}
+
+.title-vengadores{
+    font-size: 45px;
+    font-weight: 600;
+    line-height: 45px;
+    position: absolute;
+    top: 3222px;
+    color: #FFF;
+    left: 160px;
+    background-color: transparent;
+}
+
+.fondo-vengadores{
+    top: 3400px;
+    position: absolute;
+    left: 101px;
+    height: 527.626px;
+    width: 1077.059px;
+    background-color: transparent;
+    z-index: 1;
+}
+
+.capa3 {
+    z-index: 2;
+    background-color: transparent;
+}
+
+.imgpj1{
+    position: absolute;
+    top: 3305px;
+    left: 128px;
+    background-color: transparent;
+    z-index: 1;
+}
+
+.imgpj2{
+    position: absolute;
+    top: 3147px;
+    left: 550px;
+    background-color: transparent;
+    z-index: 1;
+}
+
+.imgpj3{
+    position: absolute;
+    top: 3508px;
+    left: 770px;
+    background-color: transparent;
+    z-index: 1;
+}
+
+/**********************Seccion Amigos Sticky***********************/
+.title-amigos{
+    position: absolute;
+    left: 100px;
+    top: 4000px;
+    font-size: 60px;
+    font-style: normal;
+    font-weight: 600;
+    z-index: 2;
+    background-color: transparent;
+    color: #000;
+}
+
+.title-descr{
+    color: #000;
+    font-family: Lato;
+    font-size: 40px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 37.8px; 
+}
+
+.seccion-amigos{
+    width: 1080px;
+}
+
+.text-descr{
+    padding-top: 30px;
+    color: #000;
+    font-family: Lato;
+    font-size: 20px;
+    font-weight: 400;
+    line-height: 19px;
+    letter-spacing: 0em;
+    text-align: left;
+}
+
+.columnsticky-text{
+    display: flex;
+    position: absolute;
+    top: 4200px;
+    flex-direction: column;
+    left: 760px;
+    gap: 170px;
+   
+}
+
+.oculto{
+    opacity: 0;
+}
+
+.columnsticky-img{
+    display: flex;
+    flex-direction: column;
+    align-self: flex-start;
+    margin-top: 4200px; 
+    margin-left: 100px;
+    gap: 170px;
+    width: 100%;
+}
+
+.textsticky{
+    height: 305px;
+}
+
+.img-rectamigos{
+    height: 2400px;
+    position: absolute;
+    top: 3785px;
+    background-color: transparent;
+}
+
+.img-sticky{
+    visibility: visible;
+    transition: opacity .4s ease-in-out;
+}
+
+.div-sticky {
+    position: sticky;
+    top: 90px;
+}
+
+/****************************** Seccion Poder **************************/
+
+.section-poder{
+    position: absolute;
+    top: 6050px;
+    width: 1280px;
+    height: 800px;
+    z-index: -1;
+    background-color: #000;
+}
+
+.title-poder{
+    color: #FFF;
+    font-family: Lato;
+    font-size: 60px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+    margin-top: 130px;
+    margin-left: 104px;
+}
+
+.btn-buynow{
+    width: 292px;
+    height: 50px;
+    border-radius: 111px;
+    border: 8px solid var(--2982-ff, #2982FF);
+    background: #FFE901;
+    box-shadow: 4px 5px 0px 0px #02187E;
+    margin-left: 104px;
+    position: absolute;
+    top: 300px;
+    color: #02187E;
+    font-size: 20px;
+    font-style: normal;
+    font-weight: 900;
+    line-height: 18.9px;
+    letter-spacing: 2.2px;
+    font-weight: 900;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    -webkit-text-stroke: #02187E 2px;
+    transition: background 0.5s ease, transform 0.5s ease; 
+}
+
+.btn-buynow:hover{
+    background: #FFD700;
+    transform: scale(1.2);
+}
+
+.img-rectpjs{
+    background-color: transparent;
+    width: 1280px;
+    position: absolute;
+    top: 6380px;
+    z-index: 1;
+}
+
+.pjgw{
+    position: absolute;
+    top: 6550px ;
+    z-index: 2;
+    left: 190px;
+}
+
+.pjpp{
+    position: absolute;
+    top: 6550px ;
+    z-index: 2;
+    left: 394px;
+}
+
+.pjmm{
+    position: absolute;
+    top: 6550px ;
+    z-index: 2;
+    left: 777px;
+}
+
+
+/*********************** Seccion SpriteSheet ***********************/
+
+.fondo-spreadsheet{
+    position: absolute;
+    top: 7250px;
+}
+
+.city-spreadsheet{
+    position: absolute;
+    top: 7900px;
+    left: 0;
+    height: 720px;
+    width: 1280px;
+    
+}
+
+.title-spreadsheet{
+    color: #000;
+    text-align: center;
+    font-family: Lato;
+    font-size: 60px;
+    font-style: normal;
+    font-weight: 600;
+    line-height: 56.7px;
+    position: absolute;
+    top: 7350px;
+    left: 290px ;
+}
+
+.btn-spreadsheet{
+    width: 562px;
+    height: 80px;
+    border-radius: 50px 0px 0px 50px;
+    border-top: 9px solid #2982FF;
+    border-bottom: 9px solid #2982FF;
+    border-left: 9px solid #2982FF;
+    background: #FFF;
+    box-shadow: 4px 5px 0px 0px #02187E;
+    position: absolute;
+    top: 7600px ;
+    left: 280px ;
+}
+
+.btn-spreadsheet p{
+    color: rgba(0, 0, 0, 0.39);
+    font-family: Lato;
+    font-size: 20px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 18.9px;
+    letter-spacing: 2.2px;
+    display: flex;
+    justify-content: flex-start;
+    margin-top: 30px;
+    margin-left: 40px;
+}
+
+.btn-sub{
+    width: 218px;
+    height: 80px;
+    border-radius: 0px 50px 50px 0px;
+    border: 9px solid #2982FF;
+    background: #FFE901;
+    box-shadow: 4px 5px 0px 0px #02187E;
+    color: #02187E;
+    font-family: Lato;
+    font-size: 20px;
+    font-style: normal;
+    font-weight: 900;
+    line-height: 18.9px;
+    letter-spacing: 2.2px;
+    position: absolute;
+    top: 7600px ;
+    left: 850px ;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    -webkit-text-stroke: #02187E 2px;
+}
+/*********** Sprite sheet Spiderman *********************/
+#spider-spritesheet{
+    width: 63px;
+    height: 50px;
+    position: absolute;
+    top: 8400px;
+    left: 580px;
+    z-index: 5;
+    padding-left: 1px;
+    background-image: url(../imghero/sprite.png);
+    animation: walk 0.8s steps(6) infinite;
+    cursor: pointer;
+}
+
+@keyframes walk{
+        0% {
+        background-position: 0px;
+    }
+    100% {
+        background-position: -405px;
+    }
+}
+
+
+#spider-spritesheet:hover{
+    background-image: url(../imghero/spritehover.png);
+    animation: hit 0.6s steps(3) infinite;
+    height: 120px;
+    width: 239px;
+    top: 8375px;
+    left: 550px;
+}
+
+
+@keyframes hit {
+    0% {
+    background-position: 0;
+}
+100% {
+    background-position: 718px;
+    }
+}
+
+/*************************************************************/
+
+
+.text-spreadsheet{
+    color: #000;
+    font-family: Lato;
+    font-size: 20px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 94.5%;
+    position: absolute;
+    top: 7750px;
+    left: 330px;
+}
+
+.text-spreadsheet span{
+    text-decoration: underline;
+}
+
+.img-advertencia{
+    position: absolute;
+    top: 7850px;
+    left: 330px ;
+}
+
+/***************** Footer **********************/
+
+.prefooter{
+    background-color: #242424;
+    position: absolute;
+    width: 1280px;   
+    top: 8620px;
+    display: flex;
+    justify-content: center;
+}
+
+.footer-copy{
+    background-color: #5e5e5d;
+    display: flex;
+    flex-direction: column;
+    align-items: start;
+    padding: 40px 0px 120px;
+    position: absolute;
+    top: 8695px;
+    width: 1280px;
+}
+
+
+.footer-content {
+    color: #fff;
+    letter-spacing: 2.2px;
+    margin-left: 20px;
+    width: 820px;
+    font: 400 20px/19px Lato, sans-serif;
+    margin-left: 100px;
+}
+
+.footer-content a{
+    text-decoration: underline;
+}
+
+.redes{
+    margin: 34px 0 -24px 20px;
+    margin-left: 100px;
+}
+
+
